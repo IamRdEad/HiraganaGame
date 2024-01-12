@@ -5,11 +5,11 @@ the game was build using Java SE 17
 the GUI of the game was implmented using java Swing library and JFrame. 
 
 the game is a small window game with a letter that is shown to the player
-the player enters the name of the letter and and pressing the check button 
+the player enters the name of the letter and press enter if the player was wrong he gets a message. 
 once the player is done press the end button to get feedback on how he did. 
 
-for now only 10 letters are implmented
-TODO: add more letters. 
+
+TODO: add dakuten letters. 
 TODO: add a player feedback for weak letters. 
 
 may be added in the future: 
