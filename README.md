@@ -13,8 +13,13 @@ TODO: add dakuten letters.
 TODO: add a player feedback for weak letters. 
 
 may be added in the future: 
+
 system learning mode: a mode when you can learn a few letters each time chosen by the system. 
+
 player learning mode: a mode when you can learn a few letters each time chosen by the player.
+
 hard mode: a mode when you a limited time to answer. 
+
 words mode: a mode when you have a japanesse word written in hirgana the player will need to enter the romanji and the translation. 
+
 adjusting mode: adding database for the player with his weak words so he can practice them everytime he enters the game
