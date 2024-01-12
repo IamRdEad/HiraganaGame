@@ -14,9 +14,7 @@ public class Frame extends JFrame{
 	
 	private JLabel imageLabel;
 	private JTextField input;
-	private JButton checkButton;
 	private JButton endButton;
-	private JPanel buttonPanel;
 	Game g;
 	
 	public Frame(String name) {
@@ -35,13 +33,7 @@ public class Frame extends JFrame{
 		this.add(imageLabel, BorderLayout.NORTH);
 		
 		input = new JTextField();
-		this.add(input, BorderLayout.CENTER);
-		
-		buttonPanel = new JPanel();
-		buttonPanel.setLayout(new FlowLayout());
-		
-		checkButton = new JButton("Check");
-		checkButton.addActionListener(new ActionListener() {
+		input.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -51,9 +43,11 @@ public class Frame extends JFrame{
 				ImageIcon image = new ImageIcon(letter);
 				imageLabel.setIcon(image);
 				repaint();
+				
 			}
 		});
-		buttonPanel.add(checkButton);
+		this.add(input, BorderLayout.CENTER);
+		
 		endButton = new JButton("End");
 		endButton.addActionListener(new ActionListener() {
 			
@@ -63,8 +57,8 @@ public class Frame extends JFrame{
 				System.exit(0);	
 			}
 		});
-		buttonPanel.add(endButton);
-		this.add(buttonPanel, BorderLayout.SOUTH);
+		this.add(endButton, BorderLayout.SOUTH);
+		
 		
 		this.setVisible(true);
 	}
